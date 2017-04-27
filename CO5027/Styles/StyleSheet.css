@@ -1,0 +1,609 @@
+﻿/* Body */
+body{
+    font-family: arial;
+    font-size: 15px;
+    min-width: 960px;
+    text-transform:capitalize;
+}
+
+/* Header 1 */
+h1{
+    margin:0px;
+    font-size: 30px;
+}
+
+/* Header 1 */
+h2{
+    margin:0px;
+    letter-spacing: 1.5px;
+}
+
+/* Header 3 */
+h3{
+    margin-top:20px;
+    font-weight:bold;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+/* Paragraph */
+p{
+    
+}
+
+/* Unvisited Link */
+a:link{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Visited Link */
+a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Hover Link */
+a:hover{
+    color: #606060;
+    text-decoration: none;
+}
+
+/* Selected Link */
+a:active{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Unorganized List */
+ul{
+    padding-left: 15px;
+}
+
+/* List */
+li{
+    padding-bottom: 4px;
+}
+
+/* NAVIGATION */
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 45px;
+    background-color: #000000;
+    letter-spacing: 1.5px;
+    margin-left: auto;
+    padding: 20px 0px 0px 0px;
+    opacity: 1;
+}
+
+/* Posh Avenue Logo */
+.nav-posh-avenue{
+    height:25px;
+}
+
+/* Navigation Unvisited Link */
+nav a:link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Navigation Visited Link */
+nav a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Navigation Hover Link */
+nav a:hover{
+    color:darkgray;
+    text-decoration: none;
+}
+
+/* Navigation Selected Link */
+nav a:active{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links{
+    padding: 5px 0px 0px 0px;
+    text-align: right;
+}
+
+/* Navigation Link */
+.nav-link{
+    padding: 0px 0px 0px 10px;
+}
+
+/* Search Box Padding*/
+.search-padding{
+    padding: 3px 0px 0px 0px;
+    text-align:right;
+}
+
+/* Container Padding */
+.container_padding{
+    padding: 80px 0px 30px 0px;
+}
+
+
+/* MASTERPAGE FOOTER */
+
+/* Footer Container */
+.footer-container{
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* Copyright */
+.copyright{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: #000000;
+    font-size: 12px;
+}
+
+
+/* DEFAULT PAGE */
+.posh-avenue-banner{
+    text-align:center;
+    padding: 30px 0px 10px 0px;
+    align-content:center;
+    height:65px;
+}
+
+.motto{
+    font-weight:bold;
+    text-align: center;
+    padding-bottom:20px;
+}
+
+.shop-now{
+    text-align:center;
+    padding:40px 0px 20px 0px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+a.shop-now:link{
+    text-align:center;
+    padding:10px 20px 10px 20px;
+    background-color:#000000;
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size:20px;
+    letter-spacing:1.5px;
+    border-style:solid;
+    border-color:#000000;
+}
+
+a.shop-now:visited{
+    text-align:center;
+    padding:10px 20px 10px 20px;
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+
+a.shop-now:hover{
+    text-align:center;
+    padding:10px 20px 10px 20px;
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+
+a.shop-now:active{
+    text-align:center;
+    padding:10px 20px 10px 20px;
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+.font-colour-white p{
+    color:#FFFFFF;
+}
+
+.product-center{
+    text-align:center;
+    padding:30px 0px 0px 0px;
+}
+
+.product-display-name{
+    text-align:center;
+    padding:5px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.product-display-brand{
+    text-align:center;
+    padding: 5px 0px 5px 0px;
+    font-weight:bold;
+    font-size:12px;
+    color:#404040;
+}
+a.product-display-brand:link{
+    text-align:center;
+    color:#404040;
+    font-weight:bold;
+}
+
+a.product-display-brand:visited{
+    text-align:center;
+    color:#404040;
+    font-weight:bold;
+}
+
+a.product-display-brand:hover{
+    text-align:center;
+    color:#747474;
+    font-weight:bold;
+}
+
+.product-display-brand a:active{
+    color:#404040;
+    font-weight:bold;
+}
+
+.product-display-price{
+    text-align:center;
+    padding:10px 20px 10px 20px;
+    background-color:#000000;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+a.product-display-price:link{
+    text-align:center;
+    padding:5px 10px 5px 10px;
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+
+a.product-display-price:visited{
+    text-align:center;
+    padding:5px 10px 5px 10px;
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+
+a.product-display-price:hover{
+    text-align:center;
+    padding:5px 10px 5px 10px;
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+
+a.product-display-price:active{
+    text-align:center;
+    padding:5px 10px 5px 10px;
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    font-weight:bold;
+}
+
+/* LOGIN PAGE */
+
+.login-padding{
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.login-padding-first{
+    padding: 30px 0px 10px 0px;
+    text-align: left;
+}
+
+.login-padding-last{
+    padding: 10px 0px 40px 0px;
+    text-align: left;
+}
+
+.button-alignment {
+    text-align: center;
+}
+
+.login-button{
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    height:40px;
+    width:150px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    font-family:Arial;
+}
+
+.login-button:hover{
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    height:40px;
+    width:150px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    font-family:Arial;
+}
+
+/* CONTACT PAGE */
+
+.send-button{
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    height:40px;
+    width:150px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    font-family:Arial;
+}
+
+.send-button:hover{
+    background-color:#FFFFFF;
+    color:#000000;
+    border-style:solid;
+    border-color:#000000;
+    height:40px;
+    width:150px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    font-family:Arial;
+}
+
+.contact-padding{
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.contact-padding-first{
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.contact-padding-last{
+    padding: 10px 0px 40px 0px;
+    text-align: left;
+}
+
+googleMap{
+    width:100%;
+    height:200px;
+}
+
+/* RETRIEVED FROM https://960.gs */
+
+.container_24 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+  display: inline;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container_24 .grid_1 {
+  width: 30px;
+}
+
+.container_24 .grid_2 {
+  width: 70px;
+}
+
+.container_24 .grid_3 {
+  width: 110px;
+}
+
+.container_24 .grid_4 {
+  width: 150px;
+}
+
+.container_24 .grid_5 {
+  width: 190px;
+}
+
+.container_24 .grid_6 {
+  width: 230px;
+}
+
+.container_24 .grid_7 {
+  width: 270px;
+}
+
+.container_24 .grid_8 {
+  width: 310px;
+}
+
+.container_24 .grid_9 {
+  width: 350px;
+}
+
+.container_24 .grid_10 {
+  width: 390px;
+}
+
+.container_24 .grid_11 {
+  width: 430px;
+}
+
+.container_24 .grid_12 {
+  width: 470px;
+}
+
+.container_24 .grid_13 {
+  width: 510px;
+}
+
+.container_24 .grid_14 {
+  width: 550px;
+}
+
+.container_24 .grid_15 {
+  width: 590px;
+}
+
+.container_24 .grid_16 {
+  width: 630px;
+}
+
+.container_24 .grid_17 {
+  width: 670px;
+}
+
+.container_24 .grid_18 {
+  width: 710px;
+}
+
+.container_24 .grid_19 {
+  width: 750px;
+}
+
+.container_24 .grid_20 {
+  width: 790px;
+}
+
+.container_24 .grid_21 {
+  width: 830px;
+}
+
+.container_24 .grid_22 {
+  width: 870px;
+}
+
+.container_24 .grid_23 {
+  width: 910px;
+}
+
+.container_24 .grid_24 {
+  width: 950px;
+}
+
+/* RETRIEVED FROM http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+iframe{
+    border: 0px;
+}
+
+#ContentPlaceHolder1_pnlProducts div{
+    float: left;
+    width: 235px;
+    height: 235px;
+    text-align: center;
+}
+.productImage{
+    width: 150px;
+    height: 150px;
+    vertical-align: central;
+    padding: 10px;
+}
+
+.productName{
+    font-size: 18px;
+    font-weight: bold;
+    padding:0px 0px 10px 0px;
+}
+
+.productPrice{
+    color: #606060;
+    padding:0px 0px 10px 0px;
+}
+
+.clearboth{
+   clear:both;
+}
+
+.detailsImage{
+    width: 380px;
+    height: 380px;
+}
+
+.detailsDescription{
+    width: 530px;
+    text-align: justify;
+}
+
+.detailsPrice{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detailsButton{
+    background-color:#000000;
+    color:#FFFFFF;
+    border-style:solid;
+    border-color:#000000;
+    height:40px;
+    width:150px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    font-family:Arial;
+}
+
+.productPreview{
+    width: 400px;
+    height: 400px;
+}

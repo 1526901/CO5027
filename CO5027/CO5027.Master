@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CO5027.master.cs" Inherits="CO5027.CO5027" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Styles/StyleSheet.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav>
+            <div class="container_24">
+                <div class="grid_7">
+                    <a href="default.aspx"><img class="nav-posh-avenue" src="Images/poshavenue.png" alt="POSH AVENUE" /></a>
+                </div>
+                <div class="grid_17 nav-links">
+                    <a href="Shop.aspx" class="nav-link">SHOP</a>
+                    <a href="Contact.aspx" class="nav-link">CONTACT</a>
+                    <a href="ShoppingCart.aspx" class="nav-link">SHOPPING CART</a>
+                    <a href="Manage.aspx" class="nav-link">MANAGEMENT</a>
+                    <asp:HyperLink ID="lnkLogin" NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link">LOGIN</asp:HyperLink>
+                    <asp:LinkButton ID="lnkLogout" runat="server" Text="LOGOUT" CssClass="nav-link" OnClick="lnkLogout_Click">LOGOUT</asp:LinkButton>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <div class="container_24 container_padding">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container_24">
+                <div class="grid_6">
+                    <h3>SITEMAP</h3>
+                    <ul>
+                        <li><a href="default.aspx">Home</a></li>
+                        <li><a href="shop.aspx">Shop</a></li>
+                        <li><a href="login.aspx">Login</a></li>
+                        <li><a href="contact.aspx">Contact</a></li>
+                        <li><a href="shoppingcart.aspx">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="grid_6">
+                    <h3>POSH AVENUE</h3>
+                    <ul>
+                        <li><a href="about.aspx">About</a></li>
+                        <li><a href="contact.aspx">Contact</a></li>
+                        <li><a href="shipping.aspx">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="grid_6">
+                    <h3>PAYMENTS</h3>
+                    <ul>
+                        <li>Visa</li>
+                        <li>MasterCard</li>
+                        <li>Cash On Delivery</li>
+                    </ul>
+                </div>
+                <div class="grid_6">
+                    <h3>CONNECT WITH US</h3>
+                    <ul>
+                        <li><a href="http://facebook.com/PoshAvenueBrunei">Facebook</a></li>
+                        <li><a href="http://instagram.com/Posh.Avenue">Instagram</a></li>
+                        <li><a href="http://twitter.com/InstaxBrunei">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="grid_24 copyright">
+                    Copyright &copy; Posh Avenue 2017
+                    <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
