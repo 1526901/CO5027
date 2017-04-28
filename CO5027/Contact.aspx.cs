@@ -20,12 +20,12 @@ namespace CO5027
         {
             try
             {
-                MailMessage mails = new MailMessage("1526901chester@gmail.com", "1526901chester@gmail.com");
+                MailMessage mails = new MailMessage("cid1526901@gmail.com", "cid1526901@gmail.com");
 
                 SmtpClient Client = new SmtpClient();
                 Client.Host = "smtp.gmail.com";
                 Client.Port = 587;
-                System.Net.NetworkCredential Credentials = new NetworkCredential("1526901chester@gmail.com", "Che19940607");
+                System.Net.NetworkCredential Credentials = new NetworkCredential("cid1526901@gmail.com", "Che19940607");
                 Client.Credentials = Credentials;
                 Client.EnableSsl = true;
 

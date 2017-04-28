@@ -10,7 +10,7 @@
         <EntityTypeShape EntityType="CO5027Model.ProductType" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="CO5027Model.FK_Cart_Product" ManuallyRouted="false" />
         <AssociationConnector Association="CO5027Model.FK_Product_ProductTypes" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="CO5027Model.UserInformation" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="CO5027Model.UserInformation" Width="1.5" PointX="0.75" PointY="3.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -22,10 +22,11 @@
                 <div class="grid_17 nav-links">
                     <a href="Shop.aspx" class="nav-link">SHOP</a>
                     <a href="Contact.aspx" class="nav-link">CONTACT</a>
-                    <a href="ShoppingCart.aspx" class="nav-link">SHOPPING CART</a>
-                    <a href="Manage.aspx" class="nav-link">MANAGEMENT</a>
+                    <asp:HyperLink ID="lnkManage" NavigateUrl="~/Manage.aspx" runat="server" CssClass="nav-link">ADMIN</asp:HyperLink>
                     <asp:HyperLink ID="lnkLogin" NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link">LOGIN</asp:HyperLink>
                     <asp:LinkButton ID="lnkLogout" runat="server" Text="LOGOUT" CssClass="nav-link" OnClick="lnkLogout_Click">LOGOUT</asp:LinkButton>
+                    <a href="ShoppingCart.aspx" class="nav-link">SHOPPING CART</a>
+                    <asp:HyperLink ID="Literal1" runat="server" NavigateUrl="~/ShoppingCart.aspx"></asp:HyperLink>
                 </div>
             </div>
         </nav>

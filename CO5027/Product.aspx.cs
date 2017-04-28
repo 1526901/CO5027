@@ -28,6 +28,7 @@ namespace CO5027
                 lblDescription.Text = product.Description;
                 lblItemNo.Text = id.ToString();
                 imgProduct.ImageUrl = "~/Images/Products/" + product.Image;
+                imgProduct.AlternateText = "Product";
 
                 int[] amount = Enumerable.Range(1, 10).ToArray();
                 ddlAmount.DataSource = amount;

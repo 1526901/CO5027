@@ -35,6 +35,20 @@ namespace CO5027
 
                     if (result.Succeeded)
                     {
+
+                        UserInformation info = new UserInformation
+                        {
+                            Address = txtAddress.Text,
+                            FirstName = txtFirstName.Text,
+                            LastName = txtLastName.Text,
+                            Email = txtEmail.Text,
+                            PostalCode = txtPostalCode.Text,
+                            GUID = user.Id
+                        };
+
+                        UserInfoModel model = new UserInfoModel();
+                        model.InsertUserInformation(info);
+
                         var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
 
                         var userIdentity = manager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);

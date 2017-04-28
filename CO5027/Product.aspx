@@ -1,25 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CO5027.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="CO5027.Product1" %>
+﻿<%@ Page Title="Product" Language="C#" MasterPageFile="~/CO5027.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="CO5027.Product1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style1 {
-            height: 75px;
-        }
-        .auto-style2 {
-            height: 50px;
-        }
-        .auto-style3 {
-            height: 55px;
-        }
-        .auto-style4 {
-            height: 43px;
-        }
-        .auto-style5 {
-            height: 21px;
-        }
-        .auto-style6 {
-            height: 39px;
-        }
-    </style>
+    <link rel="stylesheet" href="Styles/Product.css" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="grid_10"><asp:Image ID="imgProduct" runat="server" Height="370px" Width="370px" /></div>
