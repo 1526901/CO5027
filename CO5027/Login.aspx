@@ -9,11 +9,18 @@
         <table>
             <tr>
                 <td class="auto-style12">Username:</td>
-                <td class="auto-style9"><asp:TextBox ID="txtUsername1" runat="server" Height="20px" Width="200px"></asp:TextBox></td>
+                <td class="auto-style9"><asp:TextBox ID="txtUsername1" runat="server" Height="20px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="Username Required" ControlToValidate="txtUsername1" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style12">Password:</td>
-                <td class="auto-style9"><asp:TextBox ID="txtPassword1" runat="server" TextMode="Password" Height="20px" Width="200px"></asp:TextBox></td>
+                <td class="auto-style9"><asp:TextBox ID="txtPassword1" runat="server" TextMode="Password" Height="20px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Password Required" ControlToValidate="txtPassword1" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><asp:Literal ID="litStatus3" runat="server"></asp:Literal></td>
             </tr>
             <tr>
                 <td colspan="2" class="auto-style2"><asp:Button ID="btnLogin" runat="server" Text="LOGIN" EnableTheming="True" CssClass="detailsButton" OnClick="btnLogin_Click" /></td>

@@ -74,34 +74,39 @@ namespace CO5027
 
         private static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["CO5027Entities"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["CO5027ConnectionString"].ConnectionString;
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             UserStore<IdentityUser> userStore = new UserStore<IdentityUser>();
 
-            userStore.Context.Database.Connection.ConnectionString = ConfigurationManager.ConnectionStrings["CO5027ConnectionString"].ConnectionString;
+            userStore.Context.Database.Connection.ConnectionString =
+                System.Configuration.ConfigurationManager.
+                ConnectionStrings["CO5027ConnectionString"].ConnectionString;
 
             UserManager<IdentityUser> manager = new UserManager<IdentityUser>(userStore);
 
             var user = manager.Find(txtUsername1.Text, txtPassword1.Text);
 
-            if(user != null)
+            if (user != null)
             {
+                //Call OWIN functionality
                 var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
                 var userIdentity = manager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
 
+                //Sign in user
                 authenticationManager.SignIn(new AuthenticationProperties
                 {
                     IsPersistent = false
                 }, userIdentity);
 
+                //Redirect user to homepage
                 Response.Redirect("~/Default.aspx");
             }
             else
             {
-                litStatus1.Text = "Invalid Username or Password.";
+                litStatus3.Text = "Invalid username or password.";
             }
         }
     }

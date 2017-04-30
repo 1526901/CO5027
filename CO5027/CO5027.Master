@@ -45,17 +45,21 @@
                     <ul>
                         <li><a href="default.aspx">Home</a></li>
                         <li><a href="shop.aspx">Shop</a></li>
+                        <li><a href="manage.aspx">Admin (Admin Only)</a></li>
                         <li><a href="login.aspx">Login</a></li>
                         <li><a href="contact.aspx">Contact</a></li>
-                        <li><a href="shoppingcart.aspx">Shopping Cart</a></li>
+                        <li><a href="shoppingcart.aspx">Shopping Cart (Login Required)</a></li>
                     </ul>
                 </div>
                 <div class="grid_6">
                     <h3>POSH AVENUE</h3>
                     <ul>
-                        <li><a href="about.aspx">About</a></li>
+                        <li><a href="default.aspx">Home</a></li>
+                        <li><a href="shop.aspx">Shop</a></li>
+                        <li><a href="manage.aspx">Admin (Admin Only)</a></li>
+                        <li><a href="login.aspx">Login</a></li>
                         <li><a href="contact.aspx">Contact</a></li>
-                        <li><a href="shipping.aspx">Shipping</a></li>
+                        <li><a href="shoppingcart.aspx">Shopping Cart (Login Required)</a></li>
                     </ul>
                 </div>
                 <div class="grid_6">

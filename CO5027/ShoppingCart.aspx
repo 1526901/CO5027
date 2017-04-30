@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CO5027.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="CO5027.ShoppingCart" %>
+﻿<%@ Page Title="Shopping Cart" Language="C#" MasterPageFile="~/CO5027.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="CO5027.ShoppingCart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="Styles/ShoppingCart.css" type="text/css" />
 </asp:Content>
@@ -9,7 +9,9 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style4"></td>
-            <td class="auto-style5"><asp:Button ID="btnContinue" runat="server" PostBackUrl="~/Default.aspx" Text="SHOP MORE" CssClass="detailsButton" BackColor="#999999" BorderColor="#999999" OnClick="btnContinue_Click"></asp:Button></td>
+            <td class="auto-style5"><asp:Button ID="btnContinue" runat="server" PostBackUrl="~/Default.aspx" Text="SHOP MORE" CssClass="detailsButton" OnClick="btnContinue_Click" ></asp:Button>
+
+            </td>
         </tr>
         <tr>
             <td class="auto-style4"><b>Total:</b></td>

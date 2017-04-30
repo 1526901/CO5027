@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Owin.Security;
-using System.Configuration;
-using System.Net;
-using System.IO;
-using System.Text;
-using System.Collections;
 
 namespace CO5027
 {
@@ -28,14 +18,12 @@ namespace CO5027
                 Models.CartModel model = new Models.CartModel();
                 string userId = HttpContext.Current.User.Identity.GetUserId();
                 Literal1.Text = string.Format("({0})", model.GetAmountOfOrders(userId));
-
                 
             }
             else
             {
                 lnkLogin.Visible = true;
                 lnkLogout.Visible = false;
-                lnkManage.Visible = false;
             }
         }
 
